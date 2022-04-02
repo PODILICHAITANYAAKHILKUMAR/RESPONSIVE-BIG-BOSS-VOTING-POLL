@@ -1,0 +1,313 @@
+*,::before,::after {
+  box-sizing: border-box;
+}
+body{
+  background-color: #F7F8F9;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  background:white;
+  margin:0px auto;
+  width:1000px;
+  padding:20px;
+  height:auto;
+}
+.banner{
+  background:#0693E3;
+  color:white;
+  padding:20px;
+  text-align:center;
+  
+}
+.banner h1{
+  font-size:2.5rem;
+}
+.voteContainer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:.5rem;
+}
+.voterDetails{
+  text-align:center;
+  padding:10px;
+}
+.voterName{
+  font-size:1.5rem;
+}
+.voteImg{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  margin:10px 0 0 0;
+  cursor:pointer;
+  transition:all 0.5s ease;
+}
+.voteImg:hover{
+  transform:scale(1.1);
+}
+.voteBtn{
+  padding:5px 10px;
+  border-radius:25px;
+  color:white;
+  background:#0693E3;
+  width:100%;
+  font-size:1.5rem;
+  cursor:pointer;
+  transition:all 0.5s ease;
+}
+.voteContainer .voteBtn{
+  border:none;
+  outline:none;
+
+}
+.voteBtn:hover{
+  background:#0567B2;
+}
+
+p b{
+  font-size:1.2rem;
+}
+#text{
+  font-size:1.1rem;
+  margin:1rem 0;
+}
+#poll{
+  color:dodgerblue;
+  text-align:center;
+  font-size:1.2rem;
+  margin-top:10px;
+}
+.loading{
+  background:#FFD700;
+  padding:20px;
+  
+}
+.loading p{
+  font-size:1.1rem;
+  margin:auto 25px;
+}
+.radioContainer{
+  margin-top:30px;
+  margin-bottom: 80px;
+}
+.radioContainer h2{
+  text-align:center;
+  margin-bottom: 20px;
+}
+.radio{
+  margin-left:100px;
+  display:block;
+}
+.radio p{
+  font-size:1.2rem;
+}
+.labelContainer{
+  display:block;
+  padding:2px;
+  font-size:1.3rem;
+  margin:auto;
+}
+input{
+  margin-top:10px;
+  margin-right:3px;
+  width:18px;
+  height:18px;
+}
+.buttons{
+  margin-top:15px;
+  width:80%;
+  display:flex;
+
+}
+
+.voteCastBtn, .resultsBtn{
+  flex:50%;
+  padding:10px;
+  border-radius:10px;
+  opacity:0.8;
+  border:none;
+  outline:none;
+}
+
+.buttons .voteCastBtn{
+  margin-right:20px;
+  background:#3EB991;
+  color:white;
+  border:none;
+  outline:none;
+}
+
+.buttons .resultsBtn{
+  background:#F5F5F5;
+  border:none;
+  outline:none;
+}
+.voteCastBtn:hover,.resultsBtn:hover{
+  opacity:1;
+}
+.tableContent{
+  text-align:center;
+}
+.tableContent h1{
+  color:#0693E3;
+}
+table{
+  margin-top:20px;
+  width:100%;
+  border:.5px solid #ddd;
+  text-align:center;
+}
+td,th{
+  float:left;
+  width:25%;
+  padding:10px;
+}
+tr:nth-last-child(odd){
+  background:#F0F0F0;
+}
+th{
+  font-size:1.3rem;
+}
+tr{
+  font-size:1.2rem;
+}
+.bottomContainer{
+  width:100%;
+  margin:50px 0;
+}
+.content{
+  display:block;
+}
+.barContainer{
+  
+  width:100%;
+  background:#ddd;
+  height:20px;
+  margin:15px 0;
+}
+.content span{
+  font-size:1.3rem;
+  font-weight:600;
+}
+.right {
+  float:right;
+}
+.bar1{
+  background:green;
+  height:100%;
+}
+.bar2{
+  background:blue;
+  height:100%;
+}
+.bar3{
+  background:orange;
+  height:100%;
+}
+.bar4{
+  background:violet;
+  height:100%;
+}
+.bar5{
+  background:red;
+  height:100%;
+}
+.total{
+  text-align: center;
+}
+@media screen and (max-width:960px){
+  .container{
+    width:780px;
+    overflow:hidden;
+    margin:1rem;
+  }
+  
+  .voterDetails img{
+    width:120px;
+    display:block;
+    margin:auto;
+    height:120px;
+  }
+  .banner{
+    padding:10px;
+    margin:1rem 0;
+    }
+  .banner h1{
+    font-size:1.5rem;
+    }
+    
+}
+@media screen and (max-width:768px){
+  .voterDetails img{
+    width:100px;
+    height:100px;
+  }
+
+  .banner{
+    padding:15px;
+    }
+  .banner h1{
+    font-size:1.8rem;
+    }
+    .tableContent h2{
+      font-size:1.4rem;
+    }
+    
+}
+@media screen and (max-width:680px){
+  .voterDetails img{
+    width:90px;
+    height:90px;
+  }
+  .banner h1{
+    font-size:1.4rem;
+    }
+    .tableContent h1{
+      font-size:1.4rem;
+    }
+    .tableContent h2{
+    font-size:1.3rem;
+  }
+    
+}
+@media screen and (max-width:600px){
+  .voterDetails img{
+    width:200px;
+    height:200px;
+  }
+  .voteContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+  }
+  .banner{
+    padding:15px;
+    }
+  .banner h1{
+    font-size:1.7rem;
+    }
+    .tableContent h1{
+      font-size:1.4rem;
+    }
+    .tableContent h2{
+      font-size:1rem;
+    }
+    table tr th{
+      font-size:.85rem;
+    }
+    table tr td{
+      font-size:.9rem;
+    }
+    .radio{
+      margin:auto;
+      display:block;
+      
+    }
+    
+}

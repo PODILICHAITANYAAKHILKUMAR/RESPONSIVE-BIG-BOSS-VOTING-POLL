@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel='icon' href='images/logo.jpg' type='image/jpg'>
+  <link rel='stylesheet' href='style.css' >
+  <title>Responsive BIG BOSS Voting Poll</title>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='banner'>
+        <h1>Big Boss Telugu OTT Vote Poll</h1>
+      </div>
+      <div class='voteContainer'>
+        <div class='voterDetails'>
+          <img src='images/sunny.jpg' alt='VJ Sunny' class='voteImg'>
+          <p class='voterName'>Sunny</p>
+          <button class='voteBtn'>Vote</button>
+        </div>
+        <div class='voterDetails'>
+          <img src='images/shanmukh.jpg' alt='Shanmukh Jaswanth' class='voteImg'>
+          <p class='voterName'>Shanmukh</p>
+          <button class='voteBtn'>Vote</button>
+        </div>
+        
+        <div class='voterDetails'>
+          <img src='images/sreeram.jpg' alt='Sreeram Chandra' class='voteImg'>
+          <p class='voterName'>Sreeram</p>
+          <button class='voteBtn'>Vote</button>
+        </div>
+        
+        <div class='voterDetails'>
+          <img src='images/manas.jpg' alt='Manas' class='voteImg'>
+          <p class='voterName'>Manas</p>
+          <button class='voteBtn'>Vote</button>
+        </div>
+        <div class='voterDetails'>
+          <img src='images/siri.jpg' alt='Siri' class='voteImg'>
+          <p class='voterName'>Siri</p>
+          <button class='voteBtn'>Vote</button>
+        </div>
+      </div>
+      <p id='text'><b>Big Boss Telugu OTT </b>Voting Poll Status will be updated from time to time.     Details   of how many votes got to each contestant will be shown in a number of votes and percentage of votes clearly. Voting done through <b>Hotstar, Online Voting </b>and <b>Missed call </b>to the numbers given by Star Maa will only be counted.
+      </p>
+      <p id='poll'>Voting Poll</p>
+      <div class='loading'>
+        <p>Please wait few seconds while the poll is loading…</p>
+      </div>
+      <div class='radioContainer'>
+        <h2>Big Boss 5 Telugu Final Voting</h2>
+        <div class='radio'>
+          <p>Choose One Answer</p>
+          <div class='labelContainer'>
+            <input type='radio' name='vote' id='vote1' value='0'>
+            <label for='vote1'>Sunny</label>
+          </div>
+          <div class='labelContainer'>
+            <input type='radio' name='vote' id='vote2' value='1'>
+            <label for='vote2'>Shanmukh</label>
+          </div>
+          <div class='labelContainer'>
+            <input type='radio' name='vote' id='vote3' value='2'>
+            <label for='vote3'>Sreeram</label>
+          </div>
+          <div class='labelContainer'>
+            <input type='radio' name='vote' id='vote4' value='3'>
+            <label for='vote4'>Manas</label>
+          </div>
+          <div class='labelContainer'>
+            <input type='radio' name='vote' id='vote5' value='4'>
+            <label for='vote5'>Siri</label>
+          </div>
+          <div class='buttons'>
+            <button type='button' onclick='displayRadioValue()'class='voteCastBtn'>Vote</button>
+            <button class='resultsBtn'>Show Results</button>
+          </div>
+        </div>
+      </div>
+      <div class='tableContent'>
+        <h1>Big Boss Telugu OTT Voting Poll Results</h1>
+        <h2>Big Boss Telugu OTT Voting Results Percentage (Week 1)</h2>
+      </div>
+      <table>
+        <tr>
+          <th>Position</th>
+          <th>Contestant</th>
+          <th>Percentage</th>
+          <th>No. Of Votes</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Sunny</td>
+          <td class='percentageCount'></td>
+          <td class='voteCount'></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Shanmukh</td>
+          <td class='percentageCount'></td>
+          <td class='voteCount'></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Sreeram</td>
+          <td class='percentageCount'></td>
+          <td class='voteCount'></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Manas</td>
+          <td class='percentageCount'></td>
+          <td class='voteCount'></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Siri</td>
+          <td class='percentageCount'></td>
+          <td class='voteCount'></td>
+        </tr>
+      </table>
+      <div class='bottomContainer'>
+        <div class='content'>
+          <span class='side'>Sunny</sp>
+          <span class='right votePercentage'></span>
+        </div>
+        
+        <div class='barContainer'>
+          <div class='bar1 bar'></div>
+        </div>
+        
+        <div class='content'>
+          <span class='side'>Shanmukh</span>
+          <span class='right votePercentage'></span>
+        </div>
+        
+        <div class='barContainer'>
+          <div class='bar2 bar'></div>
+        </div>
+        
+        <div class="content">
+          <span class='side'>Sreeram</span>
+          <span class='right votePercentage'></sp>
+        </div>
+        
+        <div class='barContainer'>
+          <div class='bar3 bar'></div>
+        </div>
+        
+        <div class="content">
+          <span class='side'>Manas</sp>
+          <span class='right votePercentage'></span>
+        </div>
+        
+        <div class='barContainer'>
+          <div class='bar4 bar'></div>
+        </div>
+       
+        <div class="content">
+          <span class='side'>Siri</span>
+          <span class='right votePercentage'></span>
+        </div>
+        
+        <div class='barContainer'>
+          <div class='bar5 bar'></div>
+        </div>
+        
+        
+      </div>
+      <h1 class='total'></h1>
+    </div>  
+  
+  <script src='script.js'></script>
+  </body>  
+  </html>
+
+
+  
+  
